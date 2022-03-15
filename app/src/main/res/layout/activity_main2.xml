@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/YourCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif-monospace"
+        android:text="Your CV"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Name:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PersonName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Name"
+        android:textColor="#CC6363"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Age:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PersonAge"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Age"
+        android:textColor="#CC6363"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Job"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Your Job:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PersonJob"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Your Job"
+        android:textColor="#CC6363"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PhoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Phone Number:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/PersonPhoneNumber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="Phone Number"
+            android:textColor="#CC6363"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dial"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:onClick="onDialButton"
+            android:text="call"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="10dp"
+        android:text="Email:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/PersonEmail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Email"
+            android:textColor="#CC6363"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/openEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="#000000"
+            android:text="Open Email"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#0B0B0B"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Back"
+        app:cornerRadius="15dp" />
+
+</LinearLayout>
